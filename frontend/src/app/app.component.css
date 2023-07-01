@@ -1,0 +1,75 @@
+.container {
+  width: 400px;
+  height: auto;
+  background: #F1F7F9;
+  border: 2px solid #aaa;
+  padding: 20px;
+}
+
+.messagesList {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  height: 450px;
+  overflow-y: auto;
+  border: 1px solid #aaa;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.messagesList li {
+  padding: 10px;
+  background: #f8f8f8;
+  margin-bottom: 10px;
+}
+
+.messagesList li:last-child {
+  margin-bottom: 0;
+}
+
+.messageInput {
+  display: flex;
+  margin-top: 10px;
+}
+
+.messageInput input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+.messageInput input:disabled {
+  flex: 1;
+  padding: 8px;
+  border-radius: 10px;
+  border: none;
+  background: #ccc;
+  box-shadow: inset 5px 5px 10px #dcdcdc, inset -5px -5px 10px #ffffff;
+}
+
+.messageInput button {
+  margin-left: 10px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background: #523DD0;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.messageInput button:hover {
+  background: #7564D9;
+}
+
+.userName {
+  display: flex;
+  margin-top: 10px;
+}
+
+.userName input {
+  flex: 1;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}

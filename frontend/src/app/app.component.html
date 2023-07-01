@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Chatlog</h1>
+  <div class="userName">
+      <input [(ngModel)]="userName" placeholder="Enter name" />
+  </div>
+  <ul class="messagesList">
+      <li *ngFor="let msg of messages">{{ msg.userName }}: {{ msg.content }}</li>
+  </ul>
+  <div class="messageInput">
+      <input [(ngModel)]="message" placeholder="Enter message..." (keyup.enter)="sendMessage()"
+      [disabled]="isUserNameBlank()" />
+      <button (click)="sendMessage()">Send</button>
+      <button (click)="downloadChatMessages()">Download Chat</button>
+  </div>
+  </div>
